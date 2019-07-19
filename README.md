@@ -82,7 +82,7 @@ Change the application name in `strings.xml` file.
 
 ### White label
 
-`com_travelpayouts_flight_engine_host` is a main endpoint of Aviasales flight SDK. You can use `https://www.travel-api.pw` as your default endpoint, but we strongly recommend to change it to your [WhiteLabel host](https://support.travelpayouts.com/hc/en-us/categories/115000474487). You can change `com_travelpayouts_flight_engine_host` in `strings.xml` file.
+`com_travelpayouts_flight_engine_host` is the main endpoint of Travelpayouts flight SDK. You can use `https://www.travel-api.pw` as your default endpoint, but we strongly recommend to change it to your [WhiteLabel host](https://support.travelpayouts.com/hc/en-us/categories/115000474487). You can change `com_travelpayouts_flight_engine_host` in `strings.xml` file.
 
 ```xml
 <string name="com_travelpayouts_flight_engine_host" tools:ignore="MissingTranslation">https://www.travel-api.pw</string>
