@@ -41,19 +41,5 @@ android {
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
-    implementation("com.travelpayouts:travelsdk:1.0.2") {
-        exclude(group: 'com.squareup.leakcanary')
-        exclude(group: 'org.apache.maven')
-        exclude(group: 'xpp3')
-        exclude(group: 'com.google.android.gms', module: 'play-services-places-placereport')
-        exclude(group: 'com.google.android.gms', module: 'play-services-places')
-    }
-    compileOnly "com.google.android.wearable:wearable:2.4.0"
-    implementation "com.google.dagger:dagger:$dagger_version"
-    annotationProcessor "com.google.dagger:dagger-compiler:$dagger_version"
-    implementation "androidx.room:room-rxjava2:$room_version"
-    implementation "androidx.room:room-runtime:$room_version"
-    annotationProcessor "androidx.room:room-compiler:$room_version"
-    implementation "com.squareup.leakcanary:leakcanary-android-no-op:1.6.3"
+    implementation ('com.travelpayouts:travel-sdk:0.0.4')
 }
