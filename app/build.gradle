@@ -18,6 +18,8 @@ android {
         manifestPlaceholders = [
                 GOOGLE_API_KEY: ""
         ]
+
+        ndk.abiFilters 'armeabi-v7a','arm64-v8a','x86','x86_64'
     }
 
     buildTypes {
@@ -25,7 +27,6 @@ android {
             minifyEnabled true
             shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-            ndk { abiFilters 'armeabi-v7a','arm64-v8a','x86','x86_64' }
         }
     }
 
