@@ -5,12 +5,12 @@ apply plugin: 'kotlin-android-extensions'
 //apply plugin: 'io.fabric'
 
 android {
-    compileSdkVersion 28
+    compileSdkVersion 29
 
     defaultConfig {
         applicationId "com.travelpayouts.travel.app"
         minSdkVersion 21
-        targetSdkVersion 28
+        targetSdkVersion 29
         versionCode 1
         versionName "1.0"
         multiDexEnabled true
@@ -41,5 +41,5 @@ android {
 }
 
 dependencies {
-    implementation ('com.travelpayouts:travel-sdk:1.1.0')
+    implementation ('com.travelpayouts:travel-sdk:1.1.3')
 }
