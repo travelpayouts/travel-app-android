@@ -1,6 +1,13 @@
 Change Log
 ==========
 
+## Version 1.1.6
+
+_2019-09-23_
+
+ *  Fix: double "reset filters" button.
+ *  Fix: unnecessary divider in search toolbar.
+
 ## Version 1.1.3
 
 _2019-09-12_
