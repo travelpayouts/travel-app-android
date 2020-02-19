@@ -156,6 +156,52 @@ To track events and log crashes you need to add Firebase integration:
 8) Select "No, this app does not have any version of the Crashlytics SDK installed" and click **Next**
 9) Run your app to receive analytics
 
+### Tabs customization (OPTIONAL)
+
+If you want to add rental cars tab go to App class, uncomment tab and add your program link.
+```
+//            Tab.RentalCars("Cars program link"),
+```
+
+####If you are migrating from 1.1.6:
+
+Add application class with overridden config and use it in AndroidManifest.xml.
+
+Example:
+
+Our sample package is `com.travelpayouts.travel.app`
+
+To migrate we should add `/app/src/main/java/com/travelpayouts/travel/app/App.kt`
+```
+package com.travelpayouts.travel.app
+
+import com.travelpayouts.travel.sdk.Config
+import com.travelpayouts.travel.sdk.Config.Tab
+import com.travelpayouts.travel.sdk.TravelApp
+
+
+class App : TravelApp() {
+
+    override val config: Config = Config(
+        tabs = setOf(
+            Tab.Flights,
+            Tab.Hotels,
+//            Tab.RentalCars("Cars program link"),
+            Tab.AppInfo
+        )
+    )
+
+}
+```
+in AndroidManifest.xml replace:
+```
+           android:name="com.travelpayouts.travel.sdk.TravelApp"
+```
+with:
+```
+           android:name=".App"
+```
+
 ### Template app screenshots
 
 #### Flights

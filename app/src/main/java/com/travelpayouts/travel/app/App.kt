@@ -11,7 +11,7 @@ class App : TravelApp() {
         tabs = setOf(
             Tab.Flights,
             Tab.Hotels,
-            Tab.RentalCars("https://google.com"),
+//            Tab.RentalCars("Cars program link"),
             Tab.AppInfo
         )
     )
