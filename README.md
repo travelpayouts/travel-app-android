@@ -163,7 +163,7 @@ If you want to add rental cars tab go to App class, uncomment tab and add your p
 //            Tab.RentalCars("Cars program link"),
 ```
 
-####If you are migrating from 1.1.6:
+#### If you are migrating from 1.1.6:
 
 Add application class with overridden config and use it in AndroidManifest.xml.
 
