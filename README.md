@@ -193,10 +193,12 @@ class App : TravelApp() {
 
 }
 ```
+
 in AndroidManifest.xml replace:
 ```
            android:name="com.travelpayouts.travel.sdk.TravelApp"
 ```
+
 with:
 ```
            android:name=".App"
@@ -217,3 +219,7 @@ with:
 <img src="https://cdn.travelpayouts.com/SDK/Android/device-2019-07-16-144353.png" width="30%">
 <img src="https://cdn.travelpayouts.com/SDK/Android/device-2019-07-16-144446.png" width="30%">
 <img src="https://cdn.travelpayouts.com/SDK/Android/device-2019-07-16-144458.png" width="30%">
+
+#### Car rent
+
+<img src="https://cdn.travelpayouts.com/SDK/Android/device-2020-02-21-135406.png" width="30%">
