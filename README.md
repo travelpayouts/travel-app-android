@@ -11,6 +11,7 @@ Russian version of the documentation you can find [here](https://github.com/trav
  - [App icons creation](https://github.com/travelpayouts/travel-app-android#app-icons-creation)
  - [Colors customization](https://github.com/travelpayouts/travel-app-android#colors-customization-optional)
  - [Firebase integration](https://github.com/travelpayouts/travel-app-android#firebase-integration)
+ - [Tabs customization](https://github.com/travelpayouts/travel-app-android#tabs-customization)
  - [Template app screenshots](https://github.com/travelpayouts/travel-app-android#template-app-screenshots)
 
 Travelpayouts Travel App is a application using flight and hotel search engines. When your customer books a flight or hotel, we pay you a [commission fee](https://www.travelpayouts.com). Framework is based on leading flight search engines [Aviasales](http://www.aviasales.ru), [JetRadar](http://www.jetradar.com) and hotel search engine [Hotellook](http://www.hotellook.com).
