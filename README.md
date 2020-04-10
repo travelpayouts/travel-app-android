@@ -150,8 +150,8 @@ To track events and log crashes you need to add Firebase integration:
 1) Create a new or open existing Firebase project in the [Firebase console](https://console.firebase.google.com/)
 2) Add the new Android applicaton (**Add app** -> **Android**)
 3) Download **google-services.json** and place it into the **app** folder
-4) Uncomment `//apply plugin: 'com.google.gms.google-services'` and `//apply plugin: 'io.fabric'` in `app/build.gradle`
-5) Uncomment `//classpath 'com.google.gms:google-services:4.2.0'` in `build.gradle`
+4) Uncomment `//apply plugin: 'com.google.gms.google-services'` and `//apply plugin: 'com.google.firebase.crashlytics'` in `app/build.gradle`
+5) Uncomment `//classpath 'com.google.gms:google-services:4.3.1'` in `build.gradle`
 6) Go to the console **Crashlytics** section
 7) Click **Set up Crashlytics**
 8) Select "No, this app does not have any version of the Crashlytics SDK installed" and click **Next**
