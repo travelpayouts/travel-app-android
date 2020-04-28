@@ -10,7 +10,7 @@ Travelpayouts Travel App For Android
  - [Создание иконок приложения](https://github.com/travelpayouts/travel-app-android/blob/master/README_RU.md#%D1%81%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-%D0%B8%D0%BA%D0%BE%D0%BD%D0%BE%D0%BA-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F)
  - [Настройка цветов](https://github.com/travelpayouts/travel-app-android/blob/master/README_RU.md#настройка-цветов-по-усмотрению)
  - [Интеграция Firebase](https://github.com/travelpayouts/travel-app-android/blob/master/README_RU.md#%D0%B8%D0%BD%D1%82%D0%B5%D0%B3%D1%80%D0%B0%D1%86%D0%B8%D1%8F-firebase-%D0%BF%D0%BE-%D1%83%D1%81%D0%BC%D0%BE%D1%82%D1%80%D0%B5%D0%BD%D0%B8%D1%8E)
- - [Добавление вкладки аренды авто](https://github.com/travelpayouts/travel-app-android#tabs-customization-optional)
+ - [Добавление вкладки аренды авто](https://github.com/travelpayouts/travel-app-android/blob/develop/README_RU.md#настройка-вкладок-по-усмотрению)
  - [Скриншоты шаблонного приложения](https://github.com/travelpayouts/travel-app-android/blob/master/README_RU.md#%D1%81%D0%BA%D1%80%D0%B8%D0%BD%D1%88%D0%BE%D1%82%D1%8B-%D1%88%D0%B0%D0%B1%D0%BB%D0%BE%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE-%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F)
 
 Travelpayouts Travel - это приложение, использующее поисковые системы для поиска авиарейсов и отелей. Когда Ваш клиент бронирует авиабилет или отель, мы платим Вам комиссионные. SDK разработан на базе ведущих систем для поиска авиабилетов Aviasales, JetRadar и отелей Hotellook.
