@@ -208,6 +208,17 @@ with:
            android:name=".App"
 ```
 
+The tabs order depends on their position in the code:
+```
+         tabs = setOf (
+             Tab.Flights,
+             Tab.RentalCars ("Cars program link"),
+             Tab.Hotels,
+             Tab.AppInfo
+         )
+```
+In this example, the first will be the Flights tab, then the RentalCars, then the Hotels and at the end the application information tab.
+
 ### Template app screenshots
 
 #### Flights
