@@ -168,7 +168,7 @@ If you want to add a rental cars tab go to the **App** class, uncomment tab and 
 
 #### If you are migrating from 1.1.6:
 
-Add the application class with overridden config and use it in AndroidManifest.xml.
+Add the application class with overridden `config` and use it in AndroidManifest.xml.
 
 Example:
 
