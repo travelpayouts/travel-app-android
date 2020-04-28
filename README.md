@@ -11,6 +11,7 @@ Russian version of the documentation you can find [here](https://github.com/trav
  - [App icons creation](https://github.com/travelpayouts/travel-app-android#app-icons-creation)
  - [Colors customization](https://github.com/travelpayouts/travel-app-android#colors-customization-optional)
  - [Firebase integration](https://github.com/travelpayouts/travel-app-android#firebase-integration)
+ - [Tabs customization](https://github.com/travelpayouts/travel-app-android#tabs-customization-optional)
  - [Template app screenshots](https://github.com/travelpayouts/travel-app-android#template-app-screenshots)
 
 Travelpayouts Travel App is a application using flight and hotel search engines. When your customer books a flight or hotel, we pay you a [commission fee](https://www.travelpayouts.com). Framework is based on leading flight search engines [Aviasales](http://www.aviasales.ru), [JetRadar](http://www.jetradar.com) and hotel search engine [Hotellook](http://www.hotellook.com).
@@ -149,12 +150,74 @@ To track events and log crashes you need to add Firebase integration:
 1) Create a new or open existing Firebase project in the [Firebase console](https://console.firebase.google.com/)
 2) Add the new Android applicaton (**Add app** -> **Android**)
 3) Download **google-services.json** and place it into the **app** folder
-4) Uncomment `//apply plugin: 'com.google.gms.google-services'` and `//apply plugin: 'io.fabric'` in `app/build.gradle`
-5) Uncomment `//classpath 'com.google.gms:google-services:4.2.0'` in `build.gradle`
+4) Uncomment `//apply plugin: 'com.google.gms.google-services'` and `//apply plugin: 'com.google.firebase.crashlytics'` in `app/build.gradle`
+5) Uncomment `//classpath 'com.google.gms:google-services:4.3.1'` in `build.gradle`
 6) Go to the console **Crashlytics** section
 7) Click **Set up Crashlytics**
 8) Select "No, this app does not have any version of the Crashlytics SDK installed" and click **Next**
 9) Run your app to receive analytics
+
+### Tabs customization (OPTIONAL)
+
+If you want to add a rental cars tab go to the **App** class, uncomment tab and add your program affiliate link.
+```
+//            Tab.RentalCars("Cars program link"),
+```
+
+**Important reminder**: use the [link generator](https://support.travelpayouts.com/hc/en-us/articles/360027634052) to make click-through and bookings fall into the statistics of the affiliate program.
+
+#### If you are migrating from 1.1.6:
+
+Add the application class with overridden `config` and use it in AndroidManifest.xml.
+
+Example:
+
+Our sample package is `com.travelpayouts.travel.app`
+
+To migrate we should add `/app/src/main/java/com/travelpayouts/travel/app/App.kt`
+
+```
+package com.travelpayouts.travel.app
+
+import com.travelpayouts.travel.sdk.Config
+import com.travelpayouts.travel.sdk.Config.Tab
+import com.travelpayouts.travel.sdk.TravelApp
+
+
+class App : TravelApp() {
+
+    override val config: Config = Config(
+        tabs = setOf(
+            Tab.Flights,
+            Tab.Hotels,
+//            Tab.RentalCars("Cars program link"),
+            Tab.AppInfo
+        )
+    )
+
+}
+```
+
+In AndroidManifest.xml replace:
+```
+           android:name="com.travelpayouts.travel.sdk.TravelApp"
+```
+
+with:
+```
+           android:name=".App"
+```
+
+The tabs order depends on their position in the code:
+```
+         tabs = setOf (
+             Tab.Flights,
+             Tab.RentalCars ("Cars program link"),
+             Tab.Hotels,
+             Tab.AppInfo
+         )
+```
+In this example, the first will be the Flights tab, then the RentalCars, then the Hotels and at the end the application information tab.
 
 ### Template app screenshots
 
@@ -171,3 +234,7 @@ To track events and log crashes you need to add Firebase integration:
 <img src="https://cdn.travelpayouts.com/SDK/Android/device-2019-07-16-144353.png" width="30%">
 <img src="https://cdn.travelpayouts.com/SDK/Android/device-2019-07-16-144446.png" width="30%">
 <img src="https://cdn.travelpayouts.com/SDK/Android/device-2019-07-16-144458.png" width="30%">
+
+#### Car rent
+
+<img src="https://cdn.travelpayouts.com/SDK/Android/device-2020-02-21-135406.png" width="30%">

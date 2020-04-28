@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 //apply plugin: 'com.google.gms.google-services'
-//apply plugin: 'io.fabric'
+//apply plugin: 'com.google.firebase.crashlytics'
 
 android {
     compileSdkVersion 29
@@ -41,5 +41,5 @@ android {
 }
 
 dependencies {
-    implementation ('com.travelpayouts:travel-sdk:1.1.6')
+    implementation ('com.travelpayouts:travel-sdk:1.2.1')
 }
