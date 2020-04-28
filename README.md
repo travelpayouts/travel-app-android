@@ -159,20 +159,23 @@ To track events and log crashes you need to add Firebase integration:
 
 ### Tabs customization (OPTIONAL)
 
-If you want to add rental cars tab go to App class, uncomment tab and add your program link.
+If you want to add a rental cars tab go to the **App** class, uncomment tab and add your program affiliate link.
 ```
 //            Tab.RentalCars("Cars program link"),
 ```
 
+**Important reminder**: use the [link generator](https://support.travelpayouts.com/hc/en-us/articles/360027634052) to make click-through and bookings fall into the statistics of the affiliate program.
+
 #### If you are migrating from 1.1.6:
 
-Add application class with overridden config and use it in AndroidManifest.xml.
+Add the application class with overridden config and use it in AndroidManifest.xml.
 
 Example:
 
 Our sample package is `com.travelpayouts.travel.app`
 
 To migrate we should add `/app/src/main/java/com/travelpayouts/travel/app/App.kt`
+
 ```
 package com.travelpayouts.travel.app
 
@@ -195,7 +198,7 @@ class App : TravelApp() {
 }
 ```
 
-in AndroidManifest.xml replace:
+In AndroidManifest.xml replace:
 ```
            android:name="com.travelpayouts.travel.sdk.TravelApp"
 ```
