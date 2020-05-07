@@ -150,7 +150,7 @@ android {
 2) Добавьте новое приложение для Android (**Add app** -> **Android**).
 3) Скачайте файл **google-services.json** и поместите его в папку **app**.
 4) Раскомментируйте `//apply plugin: 'com.google.gms.google-services'` и `//apply plugin: 'com.google.firebase.crashlytics'` в `app/build.gradle`.
-5) Раскомментируйте `//classpath 'com.google.gms:google-services:4.3.1'` в `build.gradle`.
+5) Раскомментируйте `//classpath 'com.google.firebase:firebase-crashlytics-gradle:2.0.0` и `//classpath 'com.google.gms:google-services:4.3.1'` в `build.gradle`.
 6) Перейдите в раздел **Crashlytics**.
 7) Нажмите **Set up Crashlytics**.
 8) Выберите "No, this app does not have any version of the Crashlytics SDK installed" и нажмите **Next**.
