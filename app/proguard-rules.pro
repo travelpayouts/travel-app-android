@@ -1,21 +1,17 @@
-# Add project specific ProGuard rules here.
-# You can control the set of applied configuration files using the
-# proguardFiles setting in build.gradle.
-#
-# For more details, see
-#   http://developer.android.com/guide/developing/tools/proguard.html
+# Removes all code for SDK versions that are not relevant for project.
+-assumevalues class android.os.Build$VERSION {
+  int SDK_INT return 21..2147483647;
+}
 
-# If your project uses WebView with JS, uncomment the following
-# and specify the fully qualified class name to the JavaScript interface
-# class:
-#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
-#   public *;
-#}
+# Specifies not to preverify the processed class files to reduce the processing time a bit.
+-dontpreverify
 
-# Uncomment this to preserve the line number information for
-# debugging stack traces.
-#-keepattributes SourceFile,LineNumberTable
+# Allow the access modifiers of classes and class members to be modified, while optimizing.
+-allowaccessmodification
 
-# If you keep the line number information, uncomment this to
-# hide the original source file name.
-#-renamesourcefileattribute SourceFile
+# Repackage all class files that are renamed into the single given package.
+-repackageclasses
+
+# Crashlytics
+-keepattributes SourceFile,LineNumberTable
+-keep public class * extends java.lang.Exception
