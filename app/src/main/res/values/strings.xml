@@ -7,4 +7,5 @@
 
   <!--Fix typo in sdk-->
   <string name="waiting_message_price_shown">Prices are</string>
+  <string name="settings_title_region_settings">Regional settings</string>
 </resources>
