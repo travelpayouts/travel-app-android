@@ -1,0 +1,3 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+  <string name="waiting_message_price_shown">Fiyatlar</string>
+</resources>
