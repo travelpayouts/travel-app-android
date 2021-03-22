@@ -166,6 +166,15 @@ If you want to add a rental cars tab go to the **App** class, uncomment tab and 
 
 **Important reminder**: use the [link generator](https://support.travelpayouts.com/hc/en-us/articles/360027634052) to make click-through and bookings fall into the statistics of the affiliate program.
 
+### How to change About text
+
+You can change the text in the About tab. For this you should add to the strings.xml next code:
+```
+<string name="about_information_text">Custom about text</string>
+```
+
+If you need translations for this text, you should do it with standard Android tools (create an alternative folder with resources, for example **values-ge** and put the translation there).
+
 #### If you are migrating from 1.1.6:
 
 Add the application class with overridden `config` and use it in AndroidManifest.xml.

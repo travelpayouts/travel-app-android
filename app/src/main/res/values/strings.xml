@@ -4,4 +4,8 @@
   <string name="com_travelpayouts_api_token" tools:ignore="MissingTranslation"></string>
   <string name="com_travelpayouts_flight_engine_host" tools:ignore="MissingTranslation">https://www.travel-api.pw</string>
   <string name="com_travelpayouts_privacy_policy" tools:ignore="MissingTranslation"></string>
+
+  <!--Fix typo in sdk-->
+  <string name="waiting_message_price_shown">Prices are</string>
+  <string name="settings_title_region_settings">Regional settings</string>
 </resources>
