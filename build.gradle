@@ -24,6 +24,7 @@ allprojects {
         maven { url 'https://maven.fabric.io/public' }
         maven { url "https://oss.sonatype.org/content/repositories/snapshots" }
         maven { url "https://sdk.smartlook.com/android/release" }
+        maven { url 'https://sdk.aviasales.ru/repository/hotellook/' }
         maven { url 'https://sdk.aviasales.ru/repository/travelpayouts/' }
     }
 }
