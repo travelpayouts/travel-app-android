@@ -5,12 +5,12 @@ apply plugin: 'kotlin-android-extensions'
 //apply plugin: 'com.google.firebase.crashlytics'
 
 android {
-    compileSdkVersion 30
+    compileSdkVersion 33
 
     defaultConfig {
         applicationId "com.travelpayouts.travel.app"
-        minSdkVersion 24
-        targetSdkVersion 30
+        minSdkVersion 26
+        targetSdkVersion 33
         versionCode 1
         versionName "1.0"
         multiDexEnabled true
@@ -41,5 +41,5 @@ android {
 }
 
 dependencies {
-    implementation ('com.travelpayouts:travel-sdk:1.4.2')
+    implementation ('com.travelpayouts:library-travel-sdk:2.0.0')
 }
