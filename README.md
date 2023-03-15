@@ -228,22 +228,36 @@ The tabs order depends on their position in the code:
 ```
 In this example, the first will be the Flights tab, then the RentalCars, then the Hotels and at the end the application information tab.
 
+### Template application features
+
+The template consists of the following:
+- **A search API library** to integrate with the search engine server. The library have included real-time flight search update - the user can see the list of available tickets as they are downloaded, there’s no need to wait for all results.
+- **Flights tags** - special tags, such as "cheapest", "fastest", etc. Tickets with these tags are always displayed at the top of the search results.
+- **Direct flights widget** - all non-stop tickets, sorted by increasing price, will automatically appear at the top of the search results screen.
+- **Direct flights filter** - allows you to leave only non-stop flights in the search results.
+- **Price chart** - a chart with the prices of flights on upcoming dates.
+
 ### Template app screenshots
 
 #### Flights
 
-<img src="https://cdn.travelpayouts.com/SDK/Android/device-2019-07-16-144731.png" width="30%">
-<img src="https://cdn.travelpayouts.com/SDK/Android/device-2019-07-16-144701.png" width="30%">
-<img src="https://cdn.travelpayouts.com/SDK/Android/device-2019-07-16-144807.png" width="30%">
-<img src="https://cdn.travelpayouts.com/SDK/Android/device-2019-07-16-144936.png" width="30%">
+<img src="https://cdn.travelpayouts.com/SDK/Android/Screenshot_20230314_201838.png" width="30%">
+<img src="https://cdn.travelpayouts.com/SDK/Android/Screenshot_20230314_201847.png" width="30%">
+<img src="https://cdn.travelpayouts.com/SDK/Android/Screenshot_20230314_201914.png" width="30%">
+<img src="https://cdn.travelpayouts.com/SDK/Android/Screenshot_20230314_201900.png" width="30%">
+<img src="https://cdn.travelpayouts.com/SDK/Android/Screenshot_20230314_201931.png" width="30%">
+<img src="https://cdn.travelpayouts.com/SDK/Android/Screenshot_20230315_153404.png" width="30%">
+<img src="https://cdn.travelpayouts.com/SDK/Android/Screenshot_20230315_153355.png" width="30%">
 
 #### Hotels
 
-<img src="https://cdn.travelpayouts.com/SDK/Android/device-2019-07-16-144219.png" width="30%">
-<img src="https://cdn.travelpayouts.com/SDK/Android/device-2019-07-16-144353.png" width="30%">
-<img src="https://cdn.travelpayouts.com/SDK/Android/device-2019-07-16-144446.png" width="30%">
-<img src="https://cdn.travelpayouts.com/SDK/Android/device-2019-07-16-144458.png" width="30%">
+<img src="https://cdn.travelpayouts.com/SDK/Android/Screenshot_20230315_153435.png" width="30%">
+<img src="https://cdn.travelpayouts.com/SDK/Android/Screenshot_20230315_153450.png" width="30%">
+<img src="https://cdn.travelpayouts.com/SDK/Android/Screenshot_20230315_153456.png" width="30%">
+<img src="https://cdn.travelpayouts.com/SDK/Android/Screenshot_20230315_153609.png" width="30%">
+<img src="https://cdn.travelpayouts.com/SDK/Android/Screenshot_20230315_153508.png" width="30%">
+<img src="https://cdn.travelpayouts.com/SDK/Android/Screenshot_20230315_153548.png" width="30%">
 
 #### Car rent
 
-<img src="https://cdn.travelpayouts.com/SDK/Android/device-2020-02-21-135406.png" width="30%">
+<img src="https://cdn.travelpayouts.com/SDK/Android/Screenshot_20230315_153245.png" width="30%">
