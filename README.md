@@ -12,6 +12,7 @@ Russian version of the documentation you can find [here](https://github.com/trav
  - [Colors customization](https://github.com/travelpayouts/travel-app-android#colors-customization-optional)
  - [Firebase integration](https://github.com/travelpayouts/travel-app-android#firebase-integration)
  - [Tabs customization](https://github.com/travelpayouts/travel-app-android#tabs-customization-optional)
+ - [Template features](https://github.com/travelpayouts/travel-app-android/blob/master/README.md#template-application-features)
  - [Template app screenshots](https://github.com/travelpayouts/travel-app-android#template-app-screenshots)
 
 Travelpayouts Travel App is a application using flight and hotel search engines. When your customer books a flight or hotel, we pay you a [commission fee](https://www.travelpayouts.com). Framework is based on leading flight search engines [Aviasales](http://www.aviasales.ru), [JetRadar](http://www.jetradar.com) and hotel search engine [Hotellook](http://www.hotellook.com).
@@ -228,14 +229,14 @@ The tabs order depends on their position in the code:
 ```
 In this example, the first will be the Flights tab, then the RentalCars, then the Hotels and at the end the application information tab.
 
-### Template application features
+### Template features
 
 The template consists of the following:
 - **A search API library** to integrate with the search engine server. The library have included real-time flight search update - the user can see the list of available tickets as they are downloaded, there’s no need to wait for all results.
-- **Flights tags** - special tags, such as "cheapest", "fastest", etc. Tickets with these tags are always displayed at the top of the search results.
-- **Direct flights widget** - all non-stop tickets, sorted by increasing price, will automatically appear at the top of the search results screen.
-- **Direct flights filter** - allows you to leave only non-stop flights in the search results.
-- **Price chart** - a chart with the prices of flights on upcoming dates.
+- **Flights tags** – special tags, such as "cheapest", "fastest", etc. Tickets with these tags are always displayed at the top of the search results.
+- **Direct flights widget** – all non-stop tickets, sorted by increasing price, will automatically appear at the top of the search results screen.
+- **Direct flights filter** – allows you to leave only non-stop flights in the search results.
+- **Price chart** – a chart with the prices of flights on upcoming dates.
 
 ### Template app screenshots
 
