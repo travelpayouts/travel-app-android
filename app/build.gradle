@@ -41,5 +41,5 @@ android {
 }
 
 dependencies {
-    implementation ('com.travelpayouts:library-travel-sdk:2.0.7')
+    implementation ('com.travelpayouts:library-travel-sdk:2.0.8')
 }
